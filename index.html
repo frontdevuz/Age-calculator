@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Davlatov Izzatillo" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <title>Age calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="container__title">Yoshingizni aniqlang 🗓️</h1>
+        <div class="age">
+            <form class="age__form-container" id="form">
+                <div class="age__form">
+                    <div class="age__form-block">
+                        <label for="day" class="age__label">Kun</label>
+                        <input type="number" id="day" placeholder="KUN" class="age__inp">
+                        <small class="age__error"></small>
+                    </div>
+                    <div class="age__form-block">
+                        <label for="month" class="age__label">Oy</label>
+                        <input type="number" id="month" placeholder="OY" class="age__inp">
+                        <small class="age__error"></small>
+                    </div>
+                    <div class="age__form-block">
+                        <label for="year" class="age__label">Yil</label>
+                        <input type="number" id="year" placeholder="YILL" class="age__inp">
+                        <small class="age__error"></small>
+                    </div>
+                </div>
+                <div class="age__submit">
+                    <hr class="age__hr" />
+                    <button type="submit" class="age__submit-btn" id="btn"><span
+                            class="age__submit-icon">&#10004;</span></button>
+                </div>
+            </form>
+            <div class="age__output">
+                <h2 class="age__output-title"><span id="YY" class="age__output-span">--</span>-yillar</h2>
+                <h2 class="age__output-title"><span id="MM" class="age__output-span">--</span>-oylar</h2>
+                <h2 class="age__output-title"><span id="DD" class="age__output-span">--</span>-kunlar</h2>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__box">
+            <h2 class="footer__title">Izzatillo Davlatov</h2>
+            <p class="footer__description">
+                Copyright @2023. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
